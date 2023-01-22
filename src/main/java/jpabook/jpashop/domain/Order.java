@@ -28,6 +28,7 @@ public class Order {
 
     private LocalDateTime orderDate;
 
+    @OneToOne(fetch = FetchType.LAZY)
     private Delivery delivery;
 
     private OrderStatus status;
