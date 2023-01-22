@@ -26,6 +26,7 @@ public abstract class Item {
 
     private int stockQuantity;
 
+    @ManyToMany(fetch = FetchType.LAZY)
     private List<Category> categories = new ArrayList<>();
 
 
